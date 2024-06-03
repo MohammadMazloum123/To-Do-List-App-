@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Stuff I need to do</h1>
+    <div class="all-tasks">
+        <h2 class="task-list-title">My Lists</h2>
+        <ul class="task-list" data-lists>
+            <!--<li class="list-name active-list">My Grocery</li>
+            <li class="list-name" >YouTube</li>
+            <li class="list-name">Work</li> -->
+        </ul>
+        <form data-new-list-form>
+            <input type="text" class="new list" data-new-list-input placeholder="new list name" aria-label="new list name">
+            <button class="btn create" aria-label="create new list">+</button>
+        </form>
+    </div>
+    <div class="todo-list" data-list-display-container>
+        <div class="todo-header">
+            <h1 class="list-title" data-list-title>Youtube</h1>
+            <p class="task-count" data-list-count>3 tasks remaining</p>
+        </div>
+        <div class="todo-body">
+            <div class="tasks" data-tasks>
+                <div class="task">
+                    <input type="checkbox" id="task-1">
+                    <label for="task-1">
+                        <span class="custom-checkbox"></span>
+                        record to do list video
+                    </label>
+                </div>
+                <!--Task 1-->
+                <div class="task">
+                    <input type="checkbox" id="task-2">
+                    <label for="task-2">
+                        <span class="custom-checkbox"></span>
+                        another task
+                    </label>
+                </div>
+                <!--Task 2-->
+                <div class="task">
+                    <input type="checkbox" id="task-3">
+                    <label for="task-3">
+                        <span class="custom-checkbox"></span>
+                        blow job
+                    </label>
+                </div>
+                <!--Task 3-->
+            </div>
+            <div class="new-task-creator">
+                <form>
+                    <input type="text" class="new task" placeholder="new task name" aria-label="new task name">
+                    <button class="btn create" aria-label="create new task">+</button>
+                </form>
+            </div>
+            <div class="delete-stuff">
+                <button class="btn delete">Clear completed tasks</button>
+                <button class="btn delete" data-delete-list-btn>Delete list</button>
+            </div>
+        </div>
+    </div>
+    <!--Java Script-->
+    <script defer src="script.js"></script>
+    <template></template>
+</body>
+</html>
